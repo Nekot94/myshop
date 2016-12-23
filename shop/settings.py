@@ -25,7 +25,7 @@ SECRET_KEY = '1k%hssq9jnyjb&-wn19pev)1)-4gaf9a#fh_i0s+-5kd!n6y64'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nekot9.pythonanywhere.com/']
+ALLOWED_HOSTS = ['EVGKAT.pythonanywhere.com']
 
 
 # Application definition
@@ -120,7 +120,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'../static')
-STATICFILES_DIRS = (os.path.join(BASE_DIR,'.static'),)
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'static'),
+    )
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
